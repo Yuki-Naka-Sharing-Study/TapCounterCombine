@@ -11,6 +11,7 @@
 		D11772C42E0C0A2000D082F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11772C32E0C0A2000D082F9 /* ContentView.swift */; };
 		D11772C62E0C0A2100D082F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11772C52E0C0A2100D082F9 /* Assets.xcassets */; };
 		D11772C92E0C0A2100D082F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11772C82E0C0A2100D082F9 /* Preview Assets.xcassets */; };
+		D11772D02E0C0A3900D082F9 /* TapCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11772CF2E0C0A3900D082F9 /* TapCounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D11772C32E0C0A2000D082F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D11772C52E0C0A2100D082F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11772C82E0C0A2100D082F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D11772CF2E0C0A3900D082F9 /* TapCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				D11772C32E0C0A2000D082F9 /* ContentView.swift */,
 				D11772C52E0C0A2100D082F9 /* Assets.xcassets */,
 				D11772C72E0C0A2100D082F9 /* Preview Content */,
+				D11772CF2E0C0A3900D082F9 /* TapCounterViewModel.swift */,
 			);
 			path = TapCounterCombine;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				D11772C42E0C0A2000D082F9 /* ContentView.swift in Sources */,
 				D11772C22E0C0A2000D082F9 /* TapCounterCombineApp.swift in Sources */,
+				D11772D02E0C0A3900D082F9 /* TapCounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,12 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = TapCounterViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text("👆 ボタン連打カウンター")
+                .font(.title2)
+                .bold()
+            
+            Text("カウント: \(viewModel.tapCount)")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+            
+            Button("タップする") {
+                viewModel.registerTap()
+            }
+            .font(.title2)
+            .padding()
+            .background(Color.orange)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            
+            if viewModel.isGoalReached {
+                Text("🎉 ゴール達成！")
+                    .font(.title2)
+                    .foregroundColor(.green)
+                
+                Button("リセット") {
+                    viewModel.reset()
+                }
+                .foregroundColor(.red)
+            }
         }
         .padding()
     }
